@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--
+<div class="start">
+<ul>
+<li>this a quiz app built by using pure html,css,javascript.</li>
+<li>upcoming features:- random quistions using jason, jumbling up of options and wuestions</li>
+
+</ul>
+    <button class="startbtn">start</button>
+</div>
+
+-->
+
+
+
+<div class="container">
+
+<div class="heading">
+<h2>My Quiz app</h2>
+<div class="timer">
+    <div class="text">Time left</div>
+    <div class="num">15</div>
+</div>
+</div>
+
+
+
+
+
+<div class="section">
+<div class="numbering"><span id="chng_num">1</span> of <span id="max_num">5</span> questions</div>
+<div class="ques"><h3>What is full form of HTMl?</h3></div>
+    
+
+<div class="option" onclick="check(this)">
+<p>A.Hyper Text Markup Language</p><i>✓</i></div>
+<div class="option" onclick="check(this)"><p>A.Hyper Text Makeup Language</p><i>X</i></div>
+<div class="option" onclick="check(this)"><p>A.Hyper Tech Markup Language</p><i>X</i></div>
+<div class="option" onclick="check(this)"><p>A.Hyper Text Multiple Language</p><i>X</i></div>
+
+
+</div>
+
+
+
+
+
+<div class="number">
+<p>1</p><p>2</p><p>3</p><p>4</p><p>5</p>
+</div>
+<div class="footer">
+<button id="finnish" onclick="finish()">Finish Test</button>
+
+<button id="next" onclick="next()">Next ques</button>
+</div>
+<footer>Developed by: Khagesh Bansal</footer>
+</div>
+
+
+
+<div class="result">
+    <h1>Quiz Result</h1>
+        <div class="win"><i class="fa fa-child fa-5x"></i><h2>Wow! you are Genius!</h2></div>
+        <div class="lost"><i class="fa fa-blind fa-5x"></i><h2>Better Luck next time!</h2></div>
+        
+
+    <table class="detail"> 
+        <tr><td>Total Questions:</td><td>5</td></tr>
+        <tr><td>Questions attempted:</td><td>0</td></tr>
+        <tr><td>Your Score:</td><td>0</td></tr>
+        <tr><td>Percentage:</td><td>0%</td></tr>
+
+
+    </table>
+
+
+ </div> <!--result closes -->
+
+
+</body>
+
+
+<style>
+</style>
+<script src="script.js">
+
+</script>
+</html>
